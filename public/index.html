@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+
+    <!-- <h1>StopWatch</h1> -->
+    <section class="StopWatch">
+        <div class="time">
+            <span id="hour" class="glow num">00</span>
+            <span class="glow">:</span>
+            
+            
+            <span id="min" class="glow num" >00</span>
+            <span class="glow">:</span>
+
+            <span id="sec" class="glow num">00</span>
+            <span class="glow">:</span>
+         
+            <span id="milsec" class="glow num">00</span>
+            
+        </div>
+        <div>
+            <span class="glow space">Hour</span>
+            <span class="glow space1">Min</span>
+            <span class="glow space2">Sec</span>
+            <span class="glow space3">Msec</span>
+        </div>
+        <div class="button">
+            <div>
+                <button  onclick="start()" id="startbtn" class=" glowbtn "><i class="fas fa-play"></i></button>
+            </div>
+            <div>
+                <button onclick="stop()" id="stopbtn" class=" glowbtn stop" ><i class="fas fa-stop-circle"></i></button>
+            </div>
+            <div>
+                <button onclick="reset()" id="resetbtn" class=" glowbtn"><i class="fas fa-history"></i></button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="app.js"></script>
+</html>
